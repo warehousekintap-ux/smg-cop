@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard MATERI SMG-COP</title>
+    <!-- FontAwesome untuk Icon Profesional -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        MATERI SMG-COP
+    </header>
+
+    <div class="search-container">
+        <!-- Kolom pencarian instan kembali hadir! -->
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Cari materi PDF di semua folder..." onkeyup="cariFile()">
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- MENU UTAMA -->
+        <div class="nav-menu">
+            <button id="btn-port" class="active" onclick="switchMenu('port')">MENU PORT</button>
+            <button id="btn-cpp" onclick="switchMenu('cpp')">MENU CPP</button>
+        </div>
+
+        <!-- AREA KONTEN (File Explorer Style) -->
+        <div class="content-area">
+            
+            <!-- Breadcrumb (Jalur Folder, misal: PORT > SOP > 2026) -->
+            <div class="breadcrumb" id="breadcrumb-container">
+                <span onclick="goHome()"><i class="fa-solid fa-house"></i> Home</span>
+            </div>
+
+            <!-- Tempat Folder dan File Ditampilkan -->
+            <div class="file-grid" id="file-grid">
+                <!-- Konten akan diisi oleh JavaScript -->
+            </div>
+
+            <!-- Area Baca PDF -->
+            <div id="pdf-viewer-container" class="hidden">
+                <div class="pdf-header">
+                    <h3 id="pdf-title">Judul Dokumen</h3>
+                    <button class="btn-close" onclick="tutupPDF()"><i class="fa-solid fa-xmark"></i> Tutup PDF</button>
+                </div>
+                <iframe id="pdf-iframe" src=""></iframe>
+            </div>
+
+        </div>
+
+        <!-- POSTER HARIAN -->
+        <div class="poster-section">
+            <h2>POSTER HARIAN</h2>
+            <img id="daily-poster" class="poster-img" src="" alt="Poster Harian">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

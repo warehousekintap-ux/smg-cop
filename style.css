@@ -1,0 +1,225 @@
+:root {
+    --primary: #1e3a8a; 
+    --secondary: #3b82f6; 
+    --bg-color: #f8fafc;
+    --text-color: #334155;
+    --folder-color: #fbbf24; /* Warna kuning folder */
+    --pdf-color: #ef4444;    /* Warna merah PDF */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* SEARCH BOX MODERN */
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.search-box {
+    position: relative;
+    width: 350px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border-radius: 25px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.nav-menu button {
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #e2e8f0;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.nav-menu button.active, .nav-menu button:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-area {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+/* BREADCRUMB (Penunjuk Jalan Folder) */
+.breadcrumb {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.breadcrumb span:hover {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+
+.breadcrumb .separator {
+    margin: 0 10px;
+    color: #94a3b8;
+    cursor: default;
+    text-decoration: none !important;
+}
+
+/* GRID FOLDER & FILE */
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.item-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #fff;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary);
+}
+
+.item-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.icon-folder { color: var(--folder-color); }
+.icon-pdf { color: var(--pdf-color); }
+
+.item-title {
+    font-size: 14px;
+    font-weight: 500;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* PDF VIEWER */
+#pdf-viewer-container {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pdf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.pdf-header h3 { margin: 0; font-size: 16px; }
+
+.btn-close {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-close:hover { background-color: #dc2626; }
+
+#pdf-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+}
+
+.poster-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.poster-img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.hidden { display: none !important; }

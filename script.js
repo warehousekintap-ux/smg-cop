@@ -9,7 +9,7 @@ const dataPORT = [
         type: "folder",
         name: "01. SOP (Standar Operasional)",
         contents: [
-            { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "materi/port/sop/panduan_keselamatan.pdf" },
+            { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "MATERI/PORT/SOP/panduan_keselamatan.pdf" },
             { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "materi/port/sop/aturan_seragam.pdf" }
         ]
     },

@@ -1,8 +1,3 @@
-// ==========================================
-// DATABASE MINI (STRUKTUR FOLDER & FILE)
-// ==========================================
-// Anda cukup menyimpan file PDF di folder komputer/GitHub Anda.
-// Lalu catat nama file & path-nya (lokasinya) di sini.
 
         // ==========================================
         // DATABASE MINI (STRUKTUR FOLDER & FILE)
@@ -88,7 +83,7 @@
 
 
 // ==========================================
-// LOGIKA SISTEM (Jangan diubah jika tidak perlu)
+// LOGIKA SISTEM 
 // ==========================================
 let currentMenu = 'port'; 
 let currentFolderData = dataPORT; 

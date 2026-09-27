@@ -4,35 +4,87 @@
 // Anda cukup menyimpan file PDF di folder komputer/GitHub Anda.
 // Lalu catat nama file & path-nya (lokasinya) di sini.
 
-const dataPORT = [
-    {
-        type: "folder",
-        name: "01. SOP (Standar Operasional)",
-        contents: [
-            { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "MATERI/PORT/SOP/panduan_keselamatan.pdf" },
-            { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "materi/port/sop/aturan_seragam.pdf" }
-        ]
-    },
-    {
-        type: "folder",
-        name: "02. Laporan Kinerja",
-        contents: [
-            // Contoh Sub-folder di dalam folder!
+        // ==========================================
+        // DATABASE MINI (STRUKTUR FOLDER & FILE)
+        // ==========================================
+
+        const dataPORT = [
             {
                 type: "folder",
-                name: "Tahun 2026",
+                name: "01. SOP (Standar Operasional)",
                 contents: [
-                    { type: "file", name: "Laporan Agustus 2026.pdf", url: "materi/port/laporan/2026/agustus.pdf" },
-                    { type: "file", name: "Laporan September 2026.pdf", url: "materi/port/laporan/2026/september.pdf" }
+                    { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "materi/port/sop/panduan_keselamatan.pdf" },
+                    { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "materi/port/sop/aturan_seragam.pdf" }
+                    // 👇 TAMBAH FILE PDF UNTUK SOP PORT DI BAWAH BARIS INI 👇
+                    
+                ]
+            },
+            {
+                type: "folder",
+                name: "02. Laporan Kinerja",
+                contents: [
+                    {
+                        type: "folder",
+                        name: "Tahun 2026",
+                        contents: [
+                            { type: "file", name: "Laporan Agustus 2026.pdf", url: "materi/port/laporan/2026/agustus.pdf" },
+                            { type: "file", name: "Laporan September 2026.pdf", url: "materi/port/laporan/2026/september.pdf" }
+                            // 👇 TAMBAH FILE PDF LAPORAN 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                type: "folder",
+                name: "03. Troubleshooting & Repair",
+                contents: [
+                    { type: "file", name: "Panduan Error Mesin Utama.pdf", url: "materi/port/troubleshooting/error_mesin.pdf" }
                 ]
             }
-        ]
-    }
-];
+            // 👇 TAMBAH FOLDER UTAMA BARU UNTUK PORT DI BAWAH BARIS INI 👇
+            // (Jangan lupa tambahkan koma ',' di kurung kurawal '}' folder sebelumnya jika membuat folder baru)
+            
+        ];
 
-const dataCPP = [
-    { type: "file", name: "Materi Dasar CPP.pdf", url: "materi/cpp/dasar.pdf" }
-];
+
+        const dataCPP = [
+            {
+                type: "folder",
+                name: "01. Manual Book (Mesin CPP)",
+                contents: [
+                    { type: "file", name: "Materi Dasar CPP.pdf", url: "materi/cpp/manual/dasar.pdf" },
+                    { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
+                    // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
+                    
+                ]
+            },
+            {
+                type: "folder",
+                name: "02. Jadwal & Maintenance",
+                contents: [
+                    {
+                        type: "folder",
+                        name: "Tahun 2026",
+                        contents: [
+                            { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
+                            // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                type: "folder",
+                name: "03. Part Catalog (Katalog Suku Cadang)",
+                contents: [
+                    { type: "file", name: "Katalog Sensor Hidrolik.pdf", url: "materi/cpp/katalog/sensor_hidrolik.pdf" }
+                ]
+            }
+            // 👇 TAMBAH FOLDER UTAMA BARU UNTUK CPP DI BAWAH BARIS INI 👇
+            
+        ];
+
 
 
 // ==========================================

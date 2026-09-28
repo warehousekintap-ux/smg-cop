@@ -48,7 +48,7 @@
                 type: "folder",
                 name: "01. Manual Book (Mesin CPP)",
                 contents: [
-                    { type: "file", name: "Materi Dasar CPP.pdf", url: "materi/cpp/manual/dasar.pdf" },
+                    { type: "file", name: "Materi Dasar CPP.pdf", url: "MATERI/CPP/panduan_keselamatan.pdf" },
                     { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
                     // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
                     

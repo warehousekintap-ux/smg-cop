@@ -5,6 +5,9 @@
     --text-color: #334155;
     --folder-color: #fbbf24; /* Warna kuning folder */
     --pdf-color: #ef4444;    /* Warna merah PDF */
+    --excel-color: #10b981;  /* Hijau Excel */
+    --ppt-color: #f97316;    /* Oranye PowerPoint */
+    --file-color: #64748b;   /* Abu-abu file lain */
 }
 
 body {
@@ -159,8 +162,12 @@ header {
 
 .icon-folder { color: var(--folder-color); }
 .icon-pdf { color: var(--pdf-color); }
+.icon-excel { color: var(--excel-color); }
+.icon-ppt { color: var(--ppt-color); }
+.icon-file { color: var(--file-color); }
 
 .item-title {
+    text-transform: uppercase; /* Otomatis huruf kapital */
     font-size: 14px;
     font-weight: 500;
     word-wrap: break-word;
@@ -223,3 +230,52 @@ header {
 }
 
 .hidden { display: none !important; }
+
+/* ==========================================
+   RESPONSIF UNTUK LAYAR HP (MOBILE FRIENDLY)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 20px; 
+        padding: 15px 0;
+    }
+    .search-container {
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    .search-box {
+        width: 100%; 
+    }
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+    .nav-menu button {
+        padding: 10px;
+        font-size: 14px;
+        width: 100%; 
+    }
+    .content-area {
+        padding: 15px;
+    }
+    .file-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+        gap: 10px;
+    }
+    .item-icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .item-title {
+        font-size: 12px;
+    }
+    #pdf-iframe {
+        height: 400px; 
+    }
+    .poster-img {
+        height: 300px; 
+    }
+}

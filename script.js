@@ -23,10 +23,10 @@ const dataOLC = [
                 type: "folder",
                 name: "BACKHOE LOADER",
                 contents: [
-                    { type: "file", name: "BACKHOE LOADER CAT 426.pdf", url: "A2B/BACKHOE LOADER/CAT 426_Suplementary Product Support Literature.pdf" },
-                    { type: "file", name: "FILL CAPASITY.pdf", url: "A2B/BACKHOE LOADER/FILL CAPASITY 416F2.pdf" },
-                    { type: "file", name: "LUBRICATION FISCOSITY.pdf", url: "A2B/BACKHOE LOADER/LUBRICATION FISCOSITY 416F2.pdf" },
-                    { type: "file", name: "NONE.pdf", url: "A2B/BACKHOE LOADER/NONE.pdf" }
+                    { type: "file", name: "BACKHOE LOADER CAT 426.PDF", url: "A2B/BACKHOE LOADER/CAT 426_Suplementary Product Support Literature.pdf" },
+                    { type: "file", name: "FILL CAPASITY.PDF", url: "A2B/BACKHOE LOADER/FILL CAPASITY 416F2.pdf" },
+                    { type: "file", name: "LUBRICATION FISCOSITY.PDF", url: "A2B/BACKHOE LOADER/LUBRICATION FISCOSITY 416F2.pdf" },
+                    { type: "file", name: "NONE.PDF", url: "A2B/BACKHOE LOADER/NONE.pdf" }
                     // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
                     
                 ]

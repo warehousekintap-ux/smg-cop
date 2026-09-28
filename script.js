@@ -159,17 +159,36 @@ const dataOLC = [
 // ==========================================
 // LOGIKA SISTEM 
 // ==========================================
+// ==========================================
+// LOGIKA SISTEM 
+// ==========================================
 let currentMenu = 'port'; 
 let currentFolderData = dataPORT; 
 let navigationHistory = []; // Untuk melacak masuk ke sub-folder
 
 function switchMenu(menu) {
+    // Hapus class 'active' dari semua tombol
     document.getElementById('btn-port').classList.remove('active');
     document.getElementById('btn-cpp').classList.remove('active');
+    document.getElementById('btn-olc').classList.remove('active'); // Tambahan OLC
+    document.getElementById('btn-a2b').classList.remove('active'); // Tambahan A2B
+    
+    // Tambahkan class 'active' ke tombol yang diklik
     document.getElementById(`btn-${menu}`).classList.add('active');
 
     currentMenu = menu;
-    currentFolderData = (menu === 'port') ? dataPORT : dataCPP;
+    
+    // Menggunakan gaya asli Anda (if - else)
+    if (menu === 'port') {
+        currentFolderData = dataPORT;
+    } else if (menu === 'cpp') {
+        currentFolderData = dataCPP;
+    } else if (menu === 'olc') {
+        currentFolderData = dataOLC;
+    } else if (menu === 'a2b') {
+        currentFolderData = dataA2B;
+    }
+
     navigationHistory = []; // Reset ke folder depan
     
     document.getElementById('searchInput').value = ""; // Reset search
@@ -220,7 +239,11 @@ function bukaFolder(folderObj) {
 // Fungsi Navigasi Breadcrumb (Jalur Folder Atas)
 function renderBreadcrumb() {
     const breadcrumb = document.getElementById('breadcrumb-container');
-    const menuName = currentMenu === 'port' ? 'PORT' : 'CPP';
+    
+    let menuName = 'PORT';
+    if (currentMenu === 'cpp') menuName = 'CPP';
+    if (currentMenu === 'olc') menuName = 'OLC';
+    if (currentMenu === 'a2b') menuName = 'A2B';
     
     let html = `<span onclick="goHome()"><i class="fa-solid fa-house"></i> ${menuName}</span>`;
     
@@ -239,7 +262,12 @@ function renderBreadcrumb() {
 function goHome() {
     navigationHistory = [];
     tutupPDF();
-    renderGrid(currentMenu === 'port' ? dataPORT : dataCPP);
+    
+    if (currentMenu === 'port') renderGrid(dataPORT);
+    else if (currentMenu === 'cpp') renderGrid(dataCPP);
+    else if (currentMenu === 'olc') renderGrid(dataOLC);
+    else if (currentMenu === 'a2b') renderGrid(dataA2B);
+    
     renderBreadcrumb();
 }
 
@@ -272,16 +300,26 @@ function cariFile() {
     
     if (keyword === "") {
         // Jika kosong, kembalikan ke folder tempat kita berada
-        const currentData = navigationHistory.length === 0 
-            ? (currentMenu === 'port' ? dataPORT : dataCPP) 
-            : navigationHistory[navigationHistory.length - 1].contents;
+        let currentData;
+        if (navigationHistory.length === 0) {
+            if (currentMenu === 'port') currentData = dataPORT;
+            else if (currentMenu === 'cpp') currentData = dataCPP;
+            else if (currentMenu === 'olc') currentData = dataOLC;
+            else if (currentMenu === 'a2b') currentData = dataA2B;
+        } else {
+            currentData = navigationHistory[navigationHistory.length - 1].contents;
+        }
         renderGrid(currentData);
         return;
     }
 
     tutupPDF();
     let hasilPencarian = [];
-    const sourceData = currentMenu === 'port' ? dataPORT : dataCPP;
+    
+    let sourceData = dataPORT;
+    if (currentMenu === 'cpp') sourceData = dataCPP;
+    else if (currentMenu === 'olc') sourceData = dataOLC;
+    else if (currentMenu === 'a2b') sourceData = dataA2B;
 
     // Fungsi rekursif (mencari menembus folder terdalam)
     function telusuri(items) {
@@ -313,3 +351,4 @@ window.onload = () => {
     const kunci = hariIni.getFullYear() + hariIni.getMonth() + hariIni.getDate();
     document.getElementById('daily-poster').src = daftarPoster[kunci % daftarPoster.length];
 };
+

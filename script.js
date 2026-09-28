@@ -21,10 +21,12 @@ const dataOLC = [
  const dataA2B = [
             {
                 type: "folder",
-                name: "01. Manual Book (Mesin CPP)",
+                name: "BACKHOE LOADER",
                 contents: [
-                    { type: "file", name: "Materi Dasar CPP.pdf", url: "MATERI/CPP/panduan_keselamatan.pdf" },
-                    { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
+                    { type: "file", name: "CAT 426_Suplementary Product Support Literature.pdf", url: "A2B/BACKHOE LOADER/CAT 426_Suplementary Product Support Literature.pdf" },
+                    { type: "file", name: "FILL CAPASITY 416F2.pdf", url: "A2B/BACKHOE LOADER/FILL CAPASITY 416F2.pdf" }
+                    { type: "file", name: "LUBRICATION FISCOSITY 416F2.pdf", url: "A2B/BACKHOE LOADER/LUBRICATION FISCOSITY 416F2.pdf" }
+                    { type: "file", name: "NONE.pdf", url: "A2B/BACKHOE LOADER/NONE.pdf" }
                     // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
                     
                 ]

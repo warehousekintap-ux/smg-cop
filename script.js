@@ -8,7 +8,7 @@ const dataOLC = [
                 type: "folder",
                 name: "BRAKE OLC",
                 contents: [
-                    { type: "file", name: "Brake System Manual 21-12-12.pdf", url: "OLC/BRAKE/brake system manual 21-12-12.pdf" },
+                    { type: "file", name: "Brake System Manual 21-12-12.pdf", url: "OLC/BRAKE/Brake System Manual 21-12-12.pdf" },
                     { type: "file", name: "Brake OLC.pdf", url: "OLC/BRAKE/p-9075-tf_m1438.pdf" }
                     // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
                     

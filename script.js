@@ -9,8 +9,8 @@
                 name: "01. SOP (Standar Operasional)",
                 contents: [
                     { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "MATERI/PORT/SOP/panduan_keselamatan.pdf" },
-                    { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "materi/port/sop/aturan_seragam.pdf" }
-                    // 👇 TAMBAH FILE PDF UNTUK SOP PORT DI BAWAH BARIS INI 👇
+                    { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "MATERI/PORT/SOP/aturan_seragam.pdf" }
+                    //  TAMBAH FILE PDF UNTUK SOP PORT DI BAWAH BARIS INI 
                     
                 ]
             },

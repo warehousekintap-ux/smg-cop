@@ -3,6 +3,80 @@
         // DATABASE MINI (STRUKTUR FOLDER & FILE)
         // ==========================================
 
+const dataOLC = [
+            {
+                type: "folder",
+                name: "01. Manual Book (Mesin CPP)",
+                contents: [
+                    { type: "file", name: "Materi Dasar CPP.pdf", url: "MATERI/CPP/panduan_keselamatan.pdf" },
+                    { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
+                    // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
+                    
+                ]
+            },
+            {
+                type: "folder",
+                name: "02. Jadwal & Maintenance",
+                contents: [
+                    {
+                        type: "folder",
+                        name: "Tahun 2026",
+                        contents: [
+                            { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
+                            // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                type: "folder",
+                name: "03. Part Catalog (Katalog Suku Cadang)",
+                contents: [
+                    { type: "file", name: "Katalog Sensor Hidrolik.pdf", url: "materi/cpp/katalog/sensor_hidrolik.pdf" }
+                ]
+            }
+            // 👇 TAMBAH FOLDER UTAMA BARU UNTUK CPP DI BAWAH BARIS INI 👇
+            
+        ];
+
+ const dataA2B = [
+            {
+                type: "folder",
+                name: "01. Manual Book (Mesin CPP)",
+                contents: [
+                    { type: "file", name: "Materi Dasar CPP.pdf", url: "MATERI/CPP/panduan_keselamatan.pdf" },
+                    { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
+                    // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
+                    
+                ]
+            },
+            {
+                type: "folder",
+                name: "02. Jadwal & Maintenance",
+                contents: [
+                    {
+                        type: "folder",
+                        name: "Tahun 2026",
+                        contents: [
+                            { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
+                            // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                type: "folder",
+                name: "03. Part Catalog (Katalog Suku Cadang)",
+                contents: [
+                    { type: "file", name: "Katalog Sensor Hidrolik.pdf", url: "materi/cpp/katalog/sensor_hidrolik.pdf" }
+                ]
+            }
+            // 👇 TAMBAH FOLDER UTAMA BARU UNTUK CPP DI BAWAH BARIS INI 👇
+            
+        ];
+
         const dataPORT = [
             {
                 type: "folder",

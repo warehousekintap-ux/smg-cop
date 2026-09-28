@@ -45,9 +45,24 @@ const dataOLC = [
                     },
             {
                 type: "folder",
-                name: "03. Part Catalog (Katalog Suku Cadang)",
+                name: "GOLF CAR",
                 contents: [
-                    { type: "file", name: "Katalog Sensor Hidrolik.pdf", url: "materi/cpp/katalog/sensor_hidrolik.pdf" }
+                    { type: "file", name: "SERVICE PARTS MANUAL golfcar.pdf", url: "A2B/GOLF CAR/SERVICE PARTS MANUAL golfcar.pdf" }
+                ]
+            },
+          {
+                type: "folder",
+                name: "HIAB CRANE",
+                contents: [
+                    { type: "file", name: "HIAB 710 Operators.pdf", url: "A2B/HIAB CRANE/HIAB 710 Operators.pdf" },
+                    { type: "file", name: "OP  SP for 160T-4 sideno-olp 2019 4 (2).pdf", url: "A2B/HIAB CRANE/OP  SP for 160T-4 sideno-olp 2019 4 (2).pdf" }
+                ]
+            },
+          {
+                type: "folder",
+                name: "TADANO",
+                contents: [
+                    { type: "file", name: "TADANO.pdf", url: "A2B/GOLF CAR/TADANO.pdf" }
                 ]
             }
             // 👇 TAMBAH FOLDER UTAMA BARU UNTUK CPP DI BAWAH BARIS INI 👇

@@ -58,36 +58,39 @@ const dataOLC = [
         const dataPORT = [
             {
                 type: "folder",
-                name: "01. SOP (Standar Operasional)",
+                name: "CV01",
                 contents: [
-                    { type: "file", name: "Panduan Keselamatan Kerja.pdf", url: "MATERI/PORT/SOP/panduan_keselamatan.pdf" },
-                    { type: "file", name: "Aturan Seragam Lapangan.pdf", url: "MATERI/PORT/SOP/aturan_seragam.pdf" }
+                    { type: "file", name: "Brake.pdf", url: "PORT/CV01/BRAKE/BSZ_e.pdf" }
                     //  TAMBAH FILE PDF UNTUK SOP PORT DI BAWAH BARIS INI 
                     
                 ]
             },
             {
                 type: "folder",
-                name: "02. Laporan Kinerja",
+                name: "CV02",
                 contents: [
-                    {
-                        type: "folder",
-                        name: "Tahun 2026",
-                        contents: [
-                            { type: "file", name: "Laporan Agustus 2026.pdf", url: "materi/port/laporan/2026/agustus.pdf" },
-                            { type: "file", name: "Laporan September 2026.pdf", url: "materi/port/laporan/2026/september.pdf" }
+                            { type: "file", name: "NONE NOW.pdf", url: "PORT/CV02/GANTINANTI.pdf" }
                             // 👇 TAMBAH FILE PDF LAPORAN 2026 DI BAWAH BARIS INI 👇
                             
                         ]
-                    }
-                ]
             },
             {
                 type: "folder",
-                name: "03. Troubleshooting & Repair",
+                name: "CV03",
                 contents: [
-                    { type: "file", name: "Panduan Error Mesin Utama.pdf", url: "materi/port/troubleshooting/error_mesin.pdf" }
-                ]
+                            { type: "file", name: "NONE NOW.pdf", url: "PORT/CV03/GANTINANTI.pdf" }
+                            // 👇 TAMBAH FILE PDF LAPORAN 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
+            },
+                 {
+                type: "folder",
+                name: "RECLAIM FEEDER",
+                contents: [
+                            { type: "file", name: "Reclaim Feeder.pdf", url: "PORT/RECLAIM FEEDER/FalkGearbox_FB Feeder breaker.pdf" }
+                            // 👇 TAMBAH FILE PDF LAPORAN 2026 DI BAWAH BARIS INI 👇
+                            
+                        ]
             }
             // 👇 TAMBAH FOLDER UTAMA BARU UNTUK PORT DI BAWAH BARIS INI 👇
             // (Jangan lupa tambahkan koma ',' di kurung kurawal '}' folder sebelumnya jika membuat folder baru)

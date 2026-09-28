@@ -357,8 +357,8 @@ function cariFile() {
 
 // POSTER HARIAN (Gunakan link gambar / path gambar lokal)
 const daftarPoster = [
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800", // Ganti link gambar Anda
-    "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800"
+    "GAMBAR/IMG-20260928-WA0007.jpg", // Ganti link gambar Anda
+    "GAMBAR/IMG-20260928-WA80007.jpg"
 ];
 
 window.onload = () => {

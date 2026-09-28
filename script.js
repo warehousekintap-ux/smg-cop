@@ -33,19 +33,16 @@ const dataOLC = [
             },
             {
                 type: "folder",
-                name: "02. Jadwal & Maintenance",
+                name: "EXCAVATOR LONG ARM",
                 contents: [
-                    {
-                        type: "folder",
-                        name: "Tahun 2026",
-                        contents: [
-                            { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
+                            { type: "file", name: "Cat320D-Part Book EIK_long arm buatan malaysia.pdf", url: "A2B/EXCAVATOR LONG ARM/Cat320D-Part Book EIK_long arm buatan malaysia.pdf" },
+                            { type: "file", name: "FILL CAPASITY 320D2.pdf", url: "A2B/EXCAVATOR LONG ARM/FILL CAPASITY 320D2.pdf" },
+                            { type: "file", name: "lubrication fiscosity 320d2.pdf", url: "A2B/EXCAVATOR LONG ARM/lubrication fiscosity 320d2.pdf" },
+                            { type: "file", name: "QUANTITY OLI ALAT BERAT.xlsx", url: "A2B/EXCAVATOR LONG ARM/QUANTITY OLI ALAT BERAT.xlsx" }
                             // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
                             
                         ]
-                    }
-                ]
-            },
+                    },
             {
                 type: "folder",
                 name: "03. Part Catalog (Katalog Suku Cadang)",

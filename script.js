@@ -115,10 +115,18 @@ const dataOLC = [
         const dataCPP = [
             {
                 type: "folder",
-                name: "01. Manual Book (Mesin CPP)",
+                name: "CV1.1",
                 contents: [
-                    { type: "file", name: "Materi Dasar CPP.pdf", url: "MATERI/CPP/panduan_keselamatan.pdf" },
-                    { type: "file", name: "Manual Instalasi Mesin.pdf", url: "materi/cpp/manual/instalasi.pdf" }
+                    { type: "file", name: "154. TDS PT. ARUTMIN INDONESIA_BW1400 x EP-800 4P x 10.0 x 5.0 x 616 Mtr _ Grade - M.pdf", url: "CPP/CV1.1/BELT CONVEYOR/154. TDS PT. ARUTMIN INDONESIA_BW1400 x EP-800 4P x 10.0 x 5.0 x 616 Mtr _ Grade - M.pdf" },
+                    { type: "file", name: "WSM-01-6401-0, CV11 Belt Profile.pdf", url: "CPP/CV1.1/BELT CONVEYOR/WSM-01-6401-0, CV11 Belt Profile.pdf" },
+                    { type: "file", name: "SIBRE SK4-M Handling Manual_114027.pdf", url: "CPP/CV1.1/BRAKE/SIBRE SK4-M Handling Manual_114027.pdf" },
+                    { type: "file", name: "sibre-data-sheet-usb-cb8-e (003).pdf", url: "CPP/CV1.1/BRAKE/sibre-data-sheet-usb-cb8-e (003).pdf" },
+                    { type: "file", name: "Siemens Gearbox B3DH (1).pdf", url: "CPP/CV1.1/GEARBOX/Siemens Gearbox B3DH (1).pdf" },
+                    { type: "file", name: "(4) tbst0360_0410en (Component CT).pptx", url: "CPP/CV1.1/SCRAPPER/(4) tbst0360_0410en (Component CT).pptx" },
+                    { type: "file", name: "(5) ti1t0490_0620en (CT installation).pptx", url: "CPP/CV1.1/SCRAPPER/(5) ti1t0490_0620en (CT installation).pptx" },
+                    { type: "file", name: "(8) Component Pengenalan B6C.pptx", url: "CPP/CV1.1/SCRAPPER/(8) Component Pengenalan B6C.pptx" },
+                    { type: "file", name: "(9) ti2t0821_0832en (B6 installation).pptx", url: "CPP/CV1.1/SCRAPPER/(9) ti2t0821_0832en (B6 installation).pptx" }
+                        
                     // 👇 TAMBAH FILE PDF MANUAL CPP DI BAWAH BARIS INI 👇
                     
                 ]
@@ -127,15 +135,8 @@ const dataOLC = [
                 type: "folder",
                 name: "02. Jadwal & Maintenance",
                 contents: [
-                    {
-                        type: "folder",
-                        name: "Tahun 2026",
-                        contents: [
                             { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
                             // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
-                            
-                        ]
-                    }
                 ]
             },
             {

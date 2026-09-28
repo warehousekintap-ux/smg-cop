@@ -133,17 +133,40 @@ const dataOLC = [
             },
             {
                 type: "folder",
-                name: "02. Jadwal & Maintenance",
+                name: "CV1.2",
                 contents: [
-                            { type: "file", name: "Jadwal Servis Berkala.pdf", url: "materi/cpp/maintenance/2026/servis.pdf" }
+                            { type: "file", name: "WSM-01-6501, CV12 Belt Profile.pdf", url: "CPP/CV1.2/BELT CONVEYOR/WSM-01-6501, CV12 Belt Profile.pdf" },
+                            { type: "file", name: "SIBRE SK4-M Handling Manual_114027.pdf", url: "CPP/CV1.2/BRAKE/SIBRE SK4-M Handling Manual_114027.pdf" },
+                            { type: "file", name: "sibre-data-sheet-usb-cb8-e (003).pdf", url: "CPP/CV1.2/BRAKE/sibre-data-sheet-usb-cb8-e (003).pdf" },
+                            { type: "file", name: "H Type IOM.pdf", url: "CPP/CV1.2/SCRAPPER/H Type IOM.pdf" },
+                            { type: "file", name: "IOM_H-type.pdf", url: "CPP/CV1.2/SCRAPPER/IOM_H-type.pdf.pdf" },
+                            { type: "file", name: "MHS HD IOM.pdf", url: "CPP/CV1.2/SCRAPPER/MHS HD IOM.pdf" }
                             // 👇 TAMBAH FILE PDF MAINTENANCE 2026 DI BAWAH BARIS INI 👇
                 ]
             },
             {
                 type: "folder",
-                name: "03. Part Catalog (Katalog Suku Cadang)",
+                name: "CV1.3",
                 contents: [
-                    { type: "file", name: "Katalog Sensor Hidrolik.pdf", url: "materi/cpp/katalog/sensor_hidrolik.pdf" }
+                    { type: "file", name: "WSM-01-6602, CV13 Belt Profile.pdf", url: "CPP/CV1.2/BELT CONVEYOR/WSM-01-6602, CV13 Belt Profile.pdf" }
+                ]
+            },
+                 {
+                type: "folder",
+                name: "FEEDER BREAKER",
+                contents: [
+                    { type: "file", name: "AI_Feeder Breaker@7-9-2012.pdf", url: "CPP/FEEDER BREAKER/AI_Feeder Breaker@7-9-2012.pdf" },
+                    { type: "file", name: "AI_Feeder Breaker-WSM.pdf", url: "CPP/FEEDER BREAKER/AI_Feeder Breaker-WSM.pdf" },
+                    { type: "file", name: "FB14430 - BF-32F-60-76F - NUSA TAMBANG PRATAMA.pdf", url: "CPP/FEEDER BREAKER/FB14430 - BF-32F-60-76F - NUSA TAMBANG PRATAMA.pdf" },
+                    { type: "file", name: "Renold_Conveyor_Section3_0508-Installation n Maintenance.pdf", url: "CPP/FEEDER BREAKER/Renold_Conveyor_Section3_0508-Installation n Maintenance.pdf" }   
+                ]
+            },
+                {
+                type: "folder",
+                name: "SIZER",
+                contents: [
+                    { type: "file", name: "AI_MVT 80003-WSM.pdf", url: "CPP/SIZER/AI_MVT 80003-WSM.pdf" },
+                    { type: "file", name: "MVT80003 - SIZER MVT800x2500 NTP - ARUTMIN MULIA WEST - VER 1.pdf", url: "CPP/SIZER/MVT80003 - SIZER MVT800x2500 NTP - ARUTMIN MULIA WEST - VER 1.pdf" }   
                 ]
             }
             // 👇 TAMBAH FOLDER UTAMA BARU UNTUK CPP DI BAWAH BARIS INI 👇

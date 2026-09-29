@@ -349,7 +349,7 @@
         // POSTER HARIAN (Gunakan link gambar / path gambar lokal)
         const daftarPoster = [
             "GAMBAR/IMG-20260928-WA0007.jpg", // Ganti link gambar Anda
-            "GAMBAR/IMG-20260928-WA80007.jpg"
+            "GAMBAR/IMG-20260928-WA0007.jpg"
         ];
 
         window.onload = () => {
